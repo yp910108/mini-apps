@@ -1,0 +1,165 @@
+.app-wrapper {
+  background: #e8e8e8;
+}
+
+/* 全局样式 */
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.content-title {
+  line-height: 1;
+  font-weight: bold;
+  font-size: 30rpx;
+}
+
+/* 轮播图 */
+swiper {
+  height: 312rpx;
+}
+swiper image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 每日新歌 */
+.newsong-content {
+  margin-top: 20rpx;
+  padding: 20rpx;
+  background: #fff;
+  color: #333;
+}
+.newsong-content .list {
+  margin-top: 30rpx;
+}
+.newsong-content .list .item:not(:last-child) {
+  margin-bottom: 20rpx;
+}
+.newsong-content .list .item .img-wrapper {
+  position: relative;
+}
+.newsong-content .list .item .img-wrapper .img {
+  vertical-align: top;
+  width: 100%;
+  height: 300rpx;
+}
+.newsong-content .list .item .img-wrapper .newtip {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50rpx;
+  height: 50rpx;
+}
+.newsong-content .list .item .img-wrapper .listen-wrapper {
+  position: absolute;
+  left: 20rpx;
+  bottom: 20rpx;
+  line-height: 1;
+  font-size: 24rpx;
+  color: #fff;
+}
+.newsong-content .list .item .img-wrapper .listen-wrapper .listen {
+  vertical-align: top;
+  margin-top: 5rpx;
+  width: 22rpx;
+  height: 14rpx;
+}
+.newsong-content .list .item .img-wrapper .play {
+  position: absolute;
+  right: 10rpx;
+  bottom: 20rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.newsong-content .list .item .desc {
+  margin-top: 15rpx;
+  text-align: center;
+  line-height: 1;
+  font-size: 26rpx;
+}
+/* 歌单推荐 */
+.songlist-content {
+  margin-top: 20rpx;
+  padding: 20rpx 20rpx 60rpx;
+  background: #fff;
+  color: #333;
+}
+.songlist-content .content-title {
+  margin-bottom: 30rpx;
+}
+.songlist-content .list {
+  margin-left: -10rpx;
+  margin-right: -10rpx;
+}
+.songlist-content .list .item {
+  float: left;
+  box-sizing: border-box;
+  padding: 0 10rpx;
+  width: 33.3%;
+}
+.songlist-content .list .item .img-wrapper {
+  position: relative;
+  padding-bottom: 100%;
+  width: 100%;
+  height: 0;
+}
+.songlist-content .list .item .img-wrapper .img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.songlist-content .list .item .desc {
+  margin-top: 10rpx;
+  width: 95%;
+  line-height: 1.4;
+  font-size: 25rpx;
+}
+.songlist-content .button-wrapper {
+  margin-top: 100rpx;
+  border-radius: 80rpx;
+  border: 1px solid #ddd;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background: #f5f5f5;
+}
+.songlist-content .button-wrapper .logo {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 18rpx;
+  width: 44rpx;
+  height: 46rpx;
+}
+.songlist-content .button-wrapper .text {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 15rpx;
+  margin-top: 25rpx;
+  line-height: 1;
+  font-size: 32rpx;
+  color: #333;
+}
+.songlist-content .button-wrapper .text::after {
+  content: '';
+  position: absolute;
+  right: -30rpx;
+  top: 10rpx;
+  border-top: 1px solid #1da0ef;
+  border-right: 1px solid #1da0ef;
+  width: 10rpx;
+  height: 10rpx;
+  transform: rotate(45deg);
+}
+.bottom {
+  padding: 50rpx 30rpx;
+  font-size: 24rpx;
+  color: #888;
+}
+.bottom .mobile {
+  margin-top: 30rpx;
+  text-align: center;
+}

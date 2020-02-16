@@ -1,0 +1,48 @@
+<view class="app-wrapper">
+  <!-- 轮播图 -->
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 每日新歌 -->
+  <view class="newsong-content">
+    <view class="content-title">每日新歌</view>
+    <view class="list">
+      <view wx:for="{{newsongs}}" class="item">
+        <view class="img-wrapper">
+          <image class="img" src="{{item.img}}" />
+          <image class="newtip" src="./assets/newtip.png" />
+          <view class="listen-wrapper">
+            <image class="listen" src="./assets/listen.png" />
+            {{item.listenNum}}
+          </view>
+          <image class="play" src="./assets/play.png" />
+        </view>
+        <view class="desc">{{item.desc}}</view>
+      </view>
+    </view>
+  </view>
+  <!-- 歌单推荐 -->
+  <view class="songlist-content">
+    <view class="content-title">歌单推荐</view>
+    <view class="list clearfix">
+      <view wx:for="{{songlist}}" class="item">
+        <view class="img-wrapper">
+          <image class="img" src="{{item.img}}" />
+        </view>
+        <view class="desc">{{item.desc}}</view>
+      </view>
+    </view>
+    <view class="button-wrapper">
+      <image class="logo" src="./assets/logo.png" />
+      <view class="text">打开酷我音乐，发现更多好音乐</view>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="introduction">酷我音乐隶属于北京酷我科技有限公司，为用户提供个性化和一站式的娱乐体验。旗下有“酷我音乐盒”“酷我聚星”等产品。</view>
+    <view class="mobile">北京(总部)电话：(010)82601782-809</view>
+  </view>
+</view>

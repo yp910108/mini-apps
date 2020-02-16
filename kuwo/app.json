@@ -1,0 +1,28 @@
+{
+  "pages": ["pages/index/index", "pages/logs/logs", "pages/join/join"],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffe443",
+    "navigationBarTitleText": "酷我音乐",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor": "#ffe443",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-selected.png"
+      },
+      {
+        "pagePath": "pages/join/join",
+        "text": "加入",
+        "iconPath": "images/users.png",
+        "selectedIconPath": "images/users-selected.png"
+      }
+    ]
+  }
+}
